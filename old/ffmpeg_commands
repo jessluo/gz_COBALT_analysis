@@ -1,0 +1,4 @@
+ffmpeg -r 15 -f image2 -i Mov_zmesozoo_%03d.png -vcodec libx264 -y -an Mov_zmesozoo.mp4 -vf pad="width=ceil(iw/2)*2:height=ceil(ih/2)*2"
+
+# adding padding because the figure had one odd dimension
+and then I used cloudconvert.com to convert to a quicktime format.
